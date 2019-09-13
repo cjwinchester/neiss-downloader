@@ -7,7 +7,7 @@ Python 3 (we're using `urllib.request` and `io.StringIO`)
 ### Usage
 `python3 download.py`
 
-This will download ~1GB of TSV files, broken up by year starting with 1997, into the `./data` directory. It will also create a handful of lookup files (derived from [this duder here](https://www.cpsc.gov/cgibin/NEISSQuery/Data/Info Docs/neiss_fmt.txt)) and drop them into the `./lookups` directory.
+This will download ~1GB of TSV files, broken up by year starting with 1997, into the `./data` directory. It will also create a handful of lookup files (derived from [this duder here](https://www.cpsc.gov/cgibin/NEISSQuery/Data/Info Docs/neiss_fmt.txt) and drop them into the `./lookups` directory.
 
 If you want to specify a different range of years to download, change the `FIRST_YEAR` and `LAST_YEAR` variables in the script.
 

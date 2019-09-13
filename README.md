@@ -9,7 +9,7 @@ Python 3 (we're using `urllib.request` and `io.StringIO`)
 
 This will download ~1GB of TSV files, broken up by year starting with 1997, into the `./data` directory. It will also create a handful of lookup files (derived from [this duder here](https://www.cpsc.gov/cgibin/NEISSQuery/Data/Info%20Docs/neiss_fmt.txt) and drop them into the `./lookups` directory.
 
-If you want to specify a different range of years to download, change the `FIRST_YEAR` and `LAST_YEAR` variables in the script.
+If you want to specify a different range of years to download, change the [`FIRST_YEAR`](https://github.com/cjwinchester/neiss-downloader/blob/master/download.py#L9) and [`LAST_YEAR`](https://github.com/cjwinchester/neiss-downloader/blob/master/download.py#L13) variables in the script.
 
 ### Combining the files
 I used [`csvstack`](https://csvkit.readthedocs.io/en/latest/scripts/csvstack.html), which you would need to install separately: `csvstack -t data/*.tsv > neiss.csv`.
